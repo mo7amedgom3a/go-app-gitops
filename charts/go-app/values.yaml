@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: mo7amedgom3a/go-app
+  tag: "87d53640e01b5abcb73f3da21a3d6c20e6f53c60"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+  nodePort: 30080
