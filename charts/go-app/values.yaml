@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: mohamedgomaa77/go-app
-  tag: "df2d43c1898c8c95da1c283cfc9150c3dd797174"
+  tag: "0c98604a5c4960cd65f1b780b7f2888e13815d14"
   pullPolicy: IfNotPresent
 
 service:
