@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1 
 kind: Application
 metadata:
   name: go-app
@@ -17,5 +17,5 @@ spec:
     namespace: default
   syncPolicy:
     automated:
-      prune: true
-      selfHeal: true
+      prune: true # remove resources that are no longer defined in Git
+      selfHeal: true # The cluster cannot drift away from Git state
